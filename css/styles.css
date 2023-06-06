@@ -327,9 +327,6 @@ body {
   color: var(--light-color);
 }
 
-.footer-container {
-  display: flex;
-}
 .footer {
   background-color: var(--dark-color);
   padding: 100px 0;

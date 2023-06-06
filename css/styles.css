@@ -17,6 +17,24 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -73,8 +91,8 @@ body {
   text-transform: uppercase;
   color: var(--primary-brand);
   display: flex;
-  align-items: center;
-  margin-right: auto;
+  align-self: center;
+  margin-right: 76px;
 }
 
 .header-menu-link {
@@ -83,6 +101,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contacts {
@@ -99,7 +119,6 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
-  flex-grow: 1;
 }
 
 .contacts-menu-link {
@@ -170,12 +189,9 @@ body {
 
 /* features */
 
-.features-container {
-  padding: 120px 0;
-}
-
 .section-features {
   background-color: var(--white-background);
+  padding: 120px 0;
 }
 
 .features-list {
@@ -208,12 +224,9 @@ body {
 
 /* services */
 
-.services-container {
-  padding-bottom: 120px;
-}
-
 .section-services {
   background-color: var(--white-background);
+  padding-bottom: 120px;
 }
 
 .services-title {
@@ -245,7 +258,7 @@ body {
 .team-item {
   display: flex;
   flex-direction: column;
-  width: calc((100% - 72px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
   background-color: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -311,6 +324,7 @@ body {
   text-transform: uppercase;
   color: var(--primary-brand);
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .span-logo-footer {
@@ -360,6 +374,10 @@ body {
 .portfolio-button:focus {
   background-color: var(--pressed-state);
   color: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .project-item-name {
@@ -368,7 +386,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .project-item-type {
